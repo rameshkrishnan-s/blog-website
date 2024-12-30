@@ -1,15 +1,14 @@
-import "./Navbar.css"; // Custom CSS file for styles
+import "./Navbar.css"; 
 
 const Navbar = () => {
   return (
     <nav className="navbar">
       <div className="navbar-container">
-        {/* Left Section: Logo */}
+      
         <div className="navbar-logo">
           <a href="/" className="logo-link">BLOGER</a>
         </div>
 
-        {/* Middle Section: Search Bar */}
         <div className="navbar-search">
           <input
             type="text"
@@ -18,12 +17,10 @@ const Navbar = () => {
           />
         </div>
 
-        {/* Right Section: Links and Profile */}
         <div className="navbar-actions">
           <a href="/write" className="action-link">Write</a>
           <button className="action-button signup">Sign Up</button>
           <button className="action-button signin">Sign In</button>
-          {/* Profile Icon */}
           <div className="profile-menu">
             <img
               src="https://via.placeholder.com/32"
