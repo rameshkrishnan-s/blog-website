@@ -1,10 +1,15 @@
 import './App.css'
+import Navbar from './componenets/Nvabar'
 
 function App() {
   
 
   return (
-   <h1>WelcomeBlog website</h1>
+    <div>
+    <Navbar />
+   <h1>Welcome Blog website</h1>
+
+   </div>
   )
 }
 
