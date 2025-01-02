@@ -1,13 +1,25 @@
 import './App.css'
-import Navbar from './componenets/Nvabar'
+import Navbar from './componenets/Navbar'
+import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
+import AuthLogin from './componenets/Login';
+import Register from './componenets/Register';
+
 
 function App() {
   
 
   return (
     <div>
-    <Navbar />
-   <h1>Welcome Blog website</h1>
+     <Router>
+      <Navbar />
+      
+      <Routes>
+        <Route path="/login" element={<AuthLogin />} />
+        <Route path="/Register" element={<Register />} />
+
+       
+      </Routes>
+    </Router>
 
    </div>
   )
