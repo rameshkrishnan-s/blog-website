@@ -20,15 +20,10 @@ const Navbar = () => {
 
         <div className="navbar-actions">
           <Link to="/write" className="action-link">Write</Link>  {/* Corrected to Link for React Router */}
-          <Link to="/Login" className="action-button signup">Login</Link>  {/* Updated to navigate to signup page */}
-          <Link to="/Register" className="action-button signin">Register</Link>  {/* Updated to navigate to signin page */}
-          <div className="profile-menu">
-            <img
-              src="https://via.placeholder.com/32"
-              alt="Profile"
-              className="profile-pic"
-            />  
-          </div>
+          <Link to="/login" className="action-button signup">Login</Link>  {/* Updated to navigate to signup page */}
+          <Link to="/register" className="action-button signin">Register</Link>  {/* Updated to navigate to signin page */}
+          
+          <Link to="/profile" className="profile">Profile</Link>
         </div>
       </div>
     </nav>
