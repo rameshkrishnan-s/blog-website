@@ -18,3 +18,16 @@ Step-by-step instructions to set up the project locally.
    ```bash
    git clone https://github.com/rameshkrishnan-s/blog-website.git
    ```
+2. Frontend :
+```bash
+cd frontend
+npm i
+npm run dev
+```
+
+3. Backend :
+```bash
+cd backend
+npm i
+node server.js
+```

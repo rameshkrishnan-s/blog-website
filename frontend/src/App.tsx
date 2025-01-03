@@ -1,8 +1,8 @@
 import './App.css'
-import Navbar from './componenets/Navbar'
+import Navbar from './components/Navbar'
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
-import AuthLogin from './componenets/Login';
-import Register from './componenets/Register';
+import AuthLogin from './components/Login';
+import Register from './components/Register';
 
 
 function App() {
