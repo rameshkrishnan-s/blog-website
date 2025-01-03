@@ -3,6 +3,7 @@ import Navbar from './components/Navbar'
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import AuthLogin from './components/Login';
 import Register from './components/Register';
+import Profile from './components/Profile';
 
 
 function App() {
@@ -16,7 +17,7 @@ function App() {
       <Routes>
         <Route path="/login" element={<AuthLogin />} />
         <Route path="/Register" element={<Register />} />
-
+        <Route path='/profile' element={<Profile/>}/>
        
       </Routes>
     </Router>
