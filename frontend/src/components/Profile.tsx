@@ -1,6 +1,6 @@
 import "./Profile.css";
 import profile from '../assets/profile.webp';
-
+import Button from "@mui/material/Button";
 
 const Profile = () => {
   return (
@@ -11,7 +11,7 @@ const Profile = () => {
         </div>
 
         <div>
-
+        <Button variant="contained">Click Me</Button>
         </div>
       
 
