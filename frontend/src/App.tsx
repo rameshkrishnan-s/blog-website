@@ -1,7 +1,9 @@
 import './App.css'
-import Navbar from './componenets/Navbar'
+import Navbar from './components/Navbar'
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
-import AuthLogin from './componenets/Login';
+import AuthLogin from './components/Login';
+import Register from './components/Register';
+
 
 function App() {
   
@@ -10,9 +12,12 @@ function App() {
     <div>
      <Router>
       <Navbar />
+      
       <Routes>
         <Route path="/login" element={<AuthLogin />} />
-        {/* Add other routes here */}
+        <Route path="/Register" element={<Register />} />
+
+       
       </Routes>
     </Router>
 

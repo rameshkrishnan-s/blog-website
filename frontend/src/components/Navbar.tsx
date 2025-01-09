@@ -1,17 +1,11 @@
+import { Link } from "react-router-dom";  // Import Link from React Router for navigation
+
 import "./Navbar.css"; 
-import { useNavigate } from "react-router-dom";
-
-
-
-
 
 const Navbar = () => {
-
-  const navigate = useNavigate();
   return (
     <nav className="navbar">
       <div className="navbar-container">
-      
         <div className="navbar-logo">
           <a href="/" className="logo-link">BLOGER</a>
         </div>
@@ -25,10 +19,9 @@ const Navbar = () => {
         </div>
 
         <div className="navbar-actions">
-          <a href="/write" className="action-link">Write</a>
-          <button className="action-button login"
-            onClick={() => navigate("/login")} >Login</button>
-          <button className="action-button signup">Sign Up</button>
+          <Link to="/write" className="action-link">Write</Link>  {/* Corrected to Link for React Router */}
+          <Link to="/Login" className="action-button signup">Login</Link>  {/* Updated to navigate to signup page */}
+          <Link to="/Register" className="action-button signin">Register</Link>  {/* Updated to navigate to signin page */}
           <div className="profile-menu">
             <img
               src="https://via.placeholder.com/32"
